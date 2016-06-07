@@ -1,0 +1,38 @@
+body {background-color: white;
+  font-family: Helvetica;}
+h1 {color: #FFB00F;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Helvetica;
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+}
+
+blockquote {
+  color: black;
+  font-weight: normal;
+  font-size: 12 px;
+  font-family: Helvetica;
+  padding: 20px;
+  margin: 5px;
+  width: 20%;
+  height: 250px;
+  display: inline-block;
+  vertical-align:top ;
+  border-style: solid;
+  border-top-color: grey;
+  border-top-width: 15px;
+}
+
+cite {color: black;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Helvetica;
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+  display: inline-block;
+  vertical-align:top ;
+}
+
