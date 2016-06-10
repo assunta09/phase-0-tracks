@@ -1,0 +1,27 @@
+
+
+img.octopus{
+	position: absolute;
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 90px;
+}
+
+img.glasses{
+	position: absolute;
+	display: block; 
+	margin-left: 45px;
+	margin-right: auto;
+	margin-top: 190px;
+}
+
+img.hat{
+	position: absolute;
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+}
+
+
