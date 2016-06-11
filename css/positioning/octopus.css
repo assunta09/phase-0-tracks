@@ -1,31 +1,26 @@
-.picture{
+.picture {
 	position: relative;
-}
-
-#octopus{
-	position:absolute;
-	display: block; 
-	margin-top: 90px;
 	margin-left: auto;
 	margin-right: auto;
+	display: inline-block;
+}
+
+#octopus {
+	position:absolute; 
+	top: 89px;
 	z-index: 1;
 }
 
-#glasses{
+#glasses {
 	position:absolute;
-	display: block; 
-	margin-top: 90px;
-	margin-left: auto;
-	margin-right: auto;
+	top: 190px;
+	left: 45px ;
 	z-index: 3;
 }
 
-#hat{
+#hat {
 	position:absolute;
-	display: block; 
-	margin-top: 0px;
-	margin-left: auto;
-	margin-right: auto;
+	top: 0px;
 	z-index: 1;
 }
 
