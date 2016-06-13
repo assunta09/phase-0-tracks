@@ -1,0 +1,20 @@
+1.	Name at least three categories of CSS adjustments (example: colors)?
+	⁃	font-size or color
+	⁃	height and width adjustments
+	⁃	align text
+	2.	What are the three ways to link a CSS rule to an HTML document? Which one is the best and why?
+	⁃	External style sheet: best since handy for long term maintenance and reuse of the css
+	⁃	Internal style sheet
+	⁃	Inline style
+	3.	What is a selector? Give examples of at least three types of selectors.
+	⁃	class: .house —> selects all elements with the class=“house”
+	⁃	id: #room —> selects the element with the id=“room”
+	⁃	element: <div> —> selects all <div> elements
+	⁃	*: * —> selects all elements
+	4.	What is the box model?
+	⁃	box model is the box that raps around every HTML element. It consists of margin, border, padding and the content.
+	5.	Explain and give an example of the cascading effect of CSS.
+	⁃	More than one stylesheet rule could apply to an html element, therefore there needs to be a way to determine which rule applies to which part. Cascading means going down from the more general rules to specific rules. The most specific rule is chosen. I.e. if there is a rule defined for the font size for the body element and then a different one for font size for a div, then in the div element the font size specified in the div would be applied overwriting the font size specified in the body.
+6.     Name two CSS techniques that assist in responsive design.
+	⁃	Media queries: to apply CSS conditionally when the width becomes to small
+	⁃	Use percentages instead of pixels. This gives much more flexibility
