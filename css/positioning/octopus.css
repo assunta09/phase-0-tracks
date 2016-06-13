@@ -1,26 +1,33 @@
-.picture {
+body {
+	text-align: center;
+}
+
+div.picture {
 	position: relative;
-	margin-left: auto;
-	margin-right: auto;
 	display: inline-block;
 }
 
 #octopus {
-	position:absolute; 
+	position: absolute;
+	left: 30%;
+	right: 30%;
 	top: 89px;
 	z-index: 1;
 }
 
 #glasses {
-	position:absolute;
+	position: absolute;
+	left: 30%;
+	right: 30%;
 	top: 190px;
-	left: 45px ;
+	margin-left: 45px ;
 	z-index: 3;
 }
 
 #hat {
-	position:absolute;
-	top: 0px;
+	position: absolute;
+	left: 30%;
+	right: 30%;
 	z-index: 1;
 }
 
