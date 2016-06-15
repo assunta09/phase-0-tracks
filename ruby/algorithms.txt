@@ -1,0 +1,16 @@
+- For every user that enters the elevator 
+
+	- until you get the answer in numnerical form:
+		- ask which floor they want to go to
+		- wait 5 seconds for an answer
+	- check current floor
+		- if the floor entered is higher than the current floor:
+			- substract current floor from entered floor
+			- dive up the number of floors that resulted from the calculation
+		- if the floor entered is lower than the current floor:
+			- substract the floor entered from current floor.
+			- drive downwards the number of floors resulted from the calculation.
+	- open doors and release user
+
+
+- 
