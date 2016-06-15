@@ -18,3 +18,14 @@ puts "Would you like to enroll in the company's health insurance?"
 
 insurance = gets.chomp
 
+wolves_like_sunshine = true
+wolves_like_garlic = true
+vampires_like_sunshine = false
+vampires_like_garlic = false
+
+
+if wolves_like_sunshine == true
+  puts "wolves_like_sunshine is true!"
+else
+  puts "wolves_like_sunshine is false!"
+end
