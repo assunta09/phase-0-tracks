@@ -5,6 +5,7 @@ body {
 div.picture {
 	position: relative;
 	display: inline-block;
+	margin: 0 auto;
 }
 
 #octopus {
