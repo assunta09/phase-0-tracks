@@ -4,28 +4,29 @@ name = gets.chomp
 
 puts "How old are you?"
 
-age = gets.chomp
+age = gets.to_i
 
 puts "What yeasr were you born?"
 
-year = gets.chomp
+year = gets.to_i
 
-puts "Our company cafeteria serves garlic bread. Should we order some for you?"
+puts "Our company cafeteria serves garlic bread. Should we order some for you (y/n)?"
 
 menue = gets.chomp
 
-puts "Would you like to enroll in the company's health insurance?"
+puts "Would you like to enroll in the company's health insurance (y/n)?"
 
 insurance = gets.chomp
 
-wolves_like_sunshine = true
-wolves_like_garlic = true
-vampires_like_sunshine = false
-vampires_like_garlic = false
 
-
-if wolves_like_sunshine == true
-  puts "wolves_like_sunshine is true!"
+if name == "Drake Cula" || name == "Tu Fang"
+	puts "Definitively a vampire"
+elsif (2016-year) == age && menue == "yes" && insurance == "yes"
+	puts "Probably not a vampire"
+elsif (2016-year) != age && menue != "yes" && insurance != "yes"
+	puts "Almost certainly a vampire"
+elsif (2016-year) != age && menue != "yes" || insurance != "yes"
+	puts "Probably a vampire"
 else
-  puts "wolves_like_sunshine is false!"
+	puts "results inconclusive"
 end
