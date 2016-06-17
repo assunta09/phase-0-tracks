@@ -1,3 +1,48 @@
-p {
-	color: red;
+body {
+	font-family: "verdana";
+	font-size: 14px;
+}
+
+h1 {
+	font-size: 200%;
+	
+}
+
+h2{
+	font-size: 150%;
+}
+
+header {
+background-color: green;
+padding: 10px;
+margin: 20px;
+text-align: center;
+color: white;
+
+}
+
+section {
+	padding: 10px;
+	width: 40%;
+	margin-bottom: 20px;
+}
+
+.column-1 {
+	margin-left: 20px;
+	float: left;
+	background-color: yellow;
+}
+
+
+.column-2 {
+	margin-right: 20px;
+	float: right;
+	background-color: orange;
+}
+
+footer {
+	clear: both;
+	background-color: pink;
+	padding: 10px;
+	margin: 20px;
 }
