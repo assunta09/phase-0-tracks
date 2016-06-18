@@ -1,3 +1,5 @@
+Elevator
+
 - For every user that enters the elevator 
 
 	- until you get the answer in numnerical form:
@@ -13,4 +15,48 @@
 	- open doors and release user
 
 
-- 
+Meal Calculation - no time for shopping
+
+- Everytime the request is triggered
+	- Check the kitchen inventory for what is on stock
+	- make a list of the ingredience available
+	- search the internet for recipes including only ingredience available.
+		if one recepie is found
+			ask user if recepies is good
+			collect user answer
+				if user answer is "Yes"
+					adjust kitchen inventory
+					print out recepie
+				else
+					tell user to order food
+		elsif several recipies			
+			show user list of recipies
+			ask user to choose one
+			collect user answer
+				if user picks recepie
+					adjust kitchen inventory
+					print out recepie
+				else
+					tell user to order food
+		else
+			tell user to order food
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
