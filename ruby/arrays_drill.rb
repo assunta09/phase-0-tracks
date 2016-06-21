@@ -1,3 +1,12 @@
+def build_array(item1, item2, item3)
+	return [item1, item2, item3]
+end
+
+def add_to_array(param1, param2)
+#	param1.concat([param2]) 
+	param1 << param2
+end
+
 awesome_array = []
 p awesome_array
 
@@ -22,3 +31,9 @@ p awesome_array.include?("pen")
 super_array = ["rainbow", "unicorn", "potato"]
 best_array_ever = awesome_array + super_array
 p best_array_ever
+
+p build_array(1, "two", nil)
+
+p add_to_array([1,2,3], "four")
+p add_to_array([], "a")
+p add_to_array(["a", "b", "c", 1, 2], 3)
