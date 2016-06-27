@@ -47,6 +47,8 @@ while stop != "quit"
 			end
 		elsif spy == " "
 			spy = " "
+		elsif spy == "-"
+			spy = "-"
 		else 
 			if "aeiouAEIOU".index(spy) == 4
 				spy = "a"
@@ -58,14 +60,15 @@ while stop != "quit"
 			end
 		end
 
+# store the new letter into the old variable
 		spyinator_2[count] = spy
 		count += 1
 	}
 
 
-	#join the letters back into a string
+#join the letters back into a string
 	spyinator_finale = spyinator_2.join('')
-	
+# Store the names for each run into a hash
 	time += 1
 	test = "spyinator_".concat(time.to_s)
 	spy_user[test] = {
@@ -73,18 +76,22 @@ while stop != "quit"
 		:spyname => spyinator_finale
 		}
 
-	p spy_user
+#Show user the result and ask if they want to exit the programm or try another name
 
 
 	puts "The spyname for #{spyinator} is #{spyinator_finale}
 
 Hit enter to test another name or type quit to stop the programm"
 
+
 	stop = gets.chomp
 end
 
+#When the user exits the prgram print all results.
 
-spy_user.each{|key| puts key }
+spy_user.each do |key, value|
+	puts "The name #{value[:name]} becomes #{value[:spyname]}"
+end
 
 
 
