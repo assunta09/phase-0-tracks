@@ -31,63 +31,64 @@ class Puppy
 end
 
 
-#counter = 0
-#while counter < 5
-	class Bird
-		def initialize
-			puts "Initializing the bird class"
-		end
-
-		def bird_song(tweet)
-			count = 0
-			while count < tweet
-				puts "Tweet"
-				count += 1
-			end
-		end
-
-		def bird_hungry(food_needed)
-			if food_needed == true
-				puts "the bird is hungry"
-			else
-				puts "the bird is not hungry"
-			end
+#create our own class
+class Bird
+	#initialize the method
+	def initialize(t, f)
+		puts "Initializing the bird class"
+		@tweet, @food_needed = t, f
+	end
+	#accessor method
+	def bird_song
+		count = 0
+		while count < @tweet
+			puts "Tweet"
+			count += 1
 		end
 	end
-	#counter += 1
-#end
+	#accessor method
+	def fly  			
+		puts "*fly*"
+  	end
+	#accessor method
+	def bird_hungry
+		if @food_needed == true
+			puts "the bird is hungry"
+		else
+			puts "the bird is not hungry"
+		end
+	end
+end
 		
-
-#bird_activities = {}
+#initialize hash
+bird_activities = Hash.new
+#create loop to make 50 instances of the bird class
 counter = 0
-array = []
-while counter < 10
-	bird = Bird.new
-	bird.bird_song(6)
-	bird.bird_hungry(true)
-	bird.bird_hungry(false)
-	
+while counter < 3
+	# create an object
+	bird = Bird.new(6, false)
+	#use the accessor methods
+	x = bird.bird_song()
+	y = bird.fly()
+	z = bird.bird_hungry()
 	counter += 1
-#	name = "instance_".concat(counter.to_s)
-#	bird_activities[name] = {
-#		:bird_song => bird_song(tweet)
-#	}
+	#create name for hash
+	name = "instance_".concat(counter.to_s)
+	# put values into hash
+	bird_activities[name] = {
+	#	:bird_song => "#{x}" --> does not work
+		:fly => "?" 
+	#	:bird_hungry => bird.bird_song --> calls the method a second time
+	}
 end
 
-#p bird_activities
-p array
-
-toy = Puppy.new
-toy.fetch("ball")
-toy.speak(6)
-toy.roll_over
-toy.dog_year(2)
-toy.jump(10)
-
-
-#10.times do |Bird|
-#	return Bird
-#end
+p bird_activities
 
 
 
+#toy = Puppy.new
+#toy.fetch("ball")
+#toy.speak(6)
+#toy.roll_over
+#toy.dog_year(2)
+#toy.jump(10)
