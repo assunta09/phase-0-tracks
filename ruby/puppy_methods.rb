@@ -77,9 +77,9 @@ while counter < 3
 	name = "instance_".concat(counter.to_s)
 	# put values into hash
 	bird_activities[name] = {
-	#	:bird_song => "#{x}"
+	#	:bird_song => "#{x}" --> does not work
 		:fly => "?"
-	#	:bird_hungry =>
+	#	:bird_hungry => bird.bird_hungry --> calls the method again.
 	}
 end
 
