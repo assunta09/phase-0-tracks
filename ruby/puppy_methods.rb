@@ -31,6 +31,10 @@ class Puppy
 end
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3c00ffd3d81cfa978dcae5e06c756ab8efdfe
 #create our own class
 class Bird
 	#initialize the method
@@ -76,13 +80,32 @@ while counter < 3
 	name = "instance_".concat(counter.to_s)
 	# put values into hash
 	bird_activities[name] = {
+<<<<<<< HEAD
 	#	:bird_song => "#{x}" --> does not work
 		:fly => "?" 
 	#	:bird_hungry => bird.bird_song --> calls the method a second time
+=======
+	#	:bird_song => "#{x}"
+		:fly => "?"
+	#	:bird_hungry =>
+>>>>>>> 99d3c00ffd3d81cfa978dcae5e06c756ab8efdfe
 	}
 end
 
 p bird_activities
+<<<<<<< HEAD
+=======
+
+
+
+#toy = Puppy.new
+#toy.fetch("ball")
+#toy.speak(6)
+#toy.roll_over
+#toy.dog_year(2)
+#toy.jump(10)
+
+>>>>>>> 99d3c00ffd3d81cfa978dcae5e06c756ab8efdfe
 
 
 
