@@ -10,8 +10,8 @@ def shopping_list(string)
 	array.map {|item| grocery_list[item] = ""}
 	# print the list to the console [can you use one of your other methods here?]
 	# output: [what data type goes here, array or hash?]
-	#puts grocery_list
-	#return grocery_list
+	puts grocery_list
+	return grocery_list
 end
 
 # Method to add an item to a list
