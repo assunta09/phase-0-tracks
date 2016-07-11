@@ -34,14 +34,14 @@ end
 #create our own class
 class Bird
 	#initialize the method
-	def initialize(t, f)
+	def initialize
 		puts "Initializing the bird class"
-		@tweet, @food_needed = t, f
+
 	end
 	#accessor method
-	def bird_song
+	def bird_song(x)
 		count = 0
-		while count < @tweet
+		while count < x
 			puts "Tweet"
 			count += 1
 		end
@@ -51,39 +51,47 @@ class Bird
 		puts "*fly*"
   	end
 	#accessor method
-	def bird_hungry
-		if @food_needed == true
-			puts "the bird is hungry"
+	def bird_hungry(y)
+		if y == true
+			puts "The bird is hungry"
 		else
-			puts "the bird is not hungry"
+			puts "The bird is not hungry"
 		end
 	end
 end
 		
 #initialize hash
-bird_activities = Hash.new
+bird_hash = {}
 #create loop to make 50 instances of the bird class
 counter = 0
 while counter < 3
 	# create an object
-	bird = Bird.new(6, false)
+	birdy = Bird.new
 	#use the accessor methods
-	x = bird.bird_song()
-	y = bird.fly()
-	z = bird.bird_hungry()
+	#bird.bird_song()
+	#bird.fly()
+	#bird.bird_hungry()
 	counter += 1
+	bird_hash[birdy] = counter
 	#create name for hash
-	name = "instance_".concat(counter.to_s)
+	#name = "instance_".concat(counter.to_s)
 	# put values into hash
-	bird_activities[name] = {
+	#bird_activities[name] = {} 
+	#bird_activites[name][:bird_song] = bird.bird_song()
 	#	:bird_song => "#{x}" --> does not work
-		:fly => "?" 
+	#	:fly => "?" 
 	#	:bird_hungry => bird.bird_song --> calls the method a second time
-	}
+	#}
 end
 
-p bird_activities
+p bird_hash
 
+bird_hash.each do |birdy, counter|
+  puts "Bird number #{counter} flying away!"
+  birdy.bird_song(2)
+  birdy.fly
+  birdy.bird_hungry(true)
+end
 
 
 #toy = Puppy.new

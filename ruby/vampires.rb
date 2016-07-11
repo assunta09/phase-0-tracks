@@ -34,13 +34,14 @@ until number_users == 0
 
 #if the allergie test did not render a vampire. The requested information is evaluated		
 	else	
+		correct_age = age + year == 2016
 		if name == "Drake Cula" || name == "Tu Fang"
 			result = "Definitively a vampire"
-		elsif (2016-year) == age && menue == "yes" && insurance == "yes"
+		elsif correct_age && menue == "y" && insurance == "y"
 			result = "Probably not a vampire"
-		elsif (2016-year) != age && menue != "yes" && insurance != "yes"
+		elsif !correct_age && menue != "y" && insurance != "y"
 			result = "Almost certainly a vampire"
-		elsif (2016-year) != age && menue != "yes" || insurance != "yes"
+		elsif !correct_age && menue != "y" || insurance != "y"
 			result = "Probably a vampire"
 		else
 			result = "results inconclusive"
@@ -48,7 +49,7 @@ until number_users == 0
 		puts result
 	end
 
-	number_users = number_users -1
+	number_users -= number_users
 
 end	
 
