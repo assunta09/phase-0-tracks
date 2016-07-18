@@ -20,6 +20,7 @@ function lenght_string(array) {
 }
 
 
+
 lenght_string(["long phrase","longest phrase","longer phrase"]);
 lenght_string(["Assunta","Anton","Josephine"]);
 lenght_string(["Hello World","Hallo Welt","Salut"]);
