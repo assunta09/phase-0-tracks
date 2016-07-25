@@ -1,0 +1,39 @@
+Release 2: 
+
+Question 1: 
+sqlite> SELECT * FROM dbc_students;                         	 1|Harry Potter|30|false|5
+2|Peter Silie|30|true|3
+3|Rosa Schlüpfer|32|true|2
+4|Hermine Granger|30|true|5
+5|Ron Weasly|30|false|5
+6|Leonardo Di Caprio|12|false|4
+
+Question 2:
+sqlite> UPDATE dbc_students SET start_week = 9 WHERE id = 6;
+
+Question 3:
+sqlite> SELECT * FROM dbc_students, dbc_locations WHERE dbc_students.location_id = dbc_locations.id;
+1|Harry Potter|30|false|5|5|Seatle
+2|Peter Silie|30|true|3|3|San Francisco
+3|Rosa Schlüpfer|32|true|2|2|New York
+4|Hermine Granger|30|true|5|5|Seatle
+5|Ron Weasly|30|false|5|5|Seatle
+6|Leonardo Di Caprio|9|false|4|4|San Diego
+
+Question 4: 
+sqlite> SELECT dbc_students.name, dbc_locations.location_name FROM dbc_students JOIN dbc_locations WHERE dbc_students.location_id = dbc_locations.id;
+Harry Potter|Seatle
+Peter Silie|San Francisco
+Rosa Schlüpfer|New York
+Hermine Granger|Seatle
+Ron Weasly|Seatle
+Leonardo Di Caprio|San Diego
+
+Question 5: 
+sqlite> DELETE FROM dbc_students WHERE id = 6;
+sqlite> SELECT dbc_students.name, dbc_locations.location_name FROM dbc_students JOIN dbc_locations WHERE dbc_students.location_id = dbc_locations.id;
+Harry Potter|Seatle
+Peter Silie|San Francisco
+Rosa Schlüpfer|New York
+Hermine Granger|Seatle
+Ron Weasly|Seatle
