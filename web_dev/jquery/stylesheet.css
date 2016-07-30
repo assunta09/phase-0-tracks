@@ -1,0 +1,30 @@
+#orange, #blue, #green{
+	display:inline-block;
+	position: relative;
+	margin: 5px;
+	float:left;
+	width:25%;
+	height:400px;
+}
+
+
+#orange {
+    height: 100px;
+    width: 100px;
+    background-color: #FA6900;
+    border-radius: 5px;
+}
+
+#blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+#green {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 5px;
+}
