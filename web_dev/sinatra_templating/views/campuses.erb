@@ -1,0 +1,21 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<title>DBC Campuses</title>
+</head>
+<body>
+<h1>DBC Campuses for world domination</h1>
+<h3>Available campuses</h3>
+	<ul>
+    	<% @students.each do |campuses| %>
+    	  <li><%= campuses['campus'] %></li	>
+    	<% end %>
+    </ul>
+
+<h3>Enter a new campus</h3>
+<form action="/campuses" method="POST"> 
+	<input type="text" name="campus"></input>
+	<button type="submit">submit</button>
+</form>
+</body>
+</html>
