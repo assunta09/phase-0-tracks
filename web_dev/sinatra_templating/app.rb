@@ -17,6 +17,18 @@ get '/students/new' do
   erb :new_student
 end
 
+get '/campuses' do
+	@students = db.execute("SELECT * FROM campuses")
+	erb :campuses
+end
+
+#create new campus via form
+post '/campuses' do
+  db.execute("INSERT INTO campuses (campus) VALUES (?)", [params['campus']])
+  redirect '/campuses'
+end
+
+
 # create new students via
 # a form
 post '/students' do
