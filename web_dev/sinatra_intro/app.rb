@@ -59,9 +59,7 @@ get '/great_job' do
 end
 
 get '/calculation' do
-  number_1 = params[:number1]
-  number_2 = params[:number2]
-  result = number_1.to_i + number_2.to_i
+  "#{params[:number1].to_i + params[:number2].to_i}"
 end
 
 
